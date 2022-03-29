@@ -308,7 +308,7 @@ def display_scree_plot(pca):
     plt.title("Eboulis des valeurs propres")
     plt.show(block=False)
 
-def display_factorial_planes(X_projected, n_comp, pca, axis_ranks, labels=None, alpha=0.5, illustrative_var=None):
+def display_factorial_planes(X_projected, n_comp, pca, axis_ranks, labels=None, alpha=0.5, illustrative_var=None, colors_dic=None):
     for d1,d2 in axis_ranks:
         if d2 < n_comp:
  
